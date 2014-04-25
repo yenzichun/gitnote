@@ -1,0 +1,49 @@
+GIT learning note
+
+1.install
+	//apt-get install libcur14-gnutls-dev libexpat1-dev gettext \ libz-dev libssl-dev
+	$ sudo apt-get install git
+	$ git clone git://git.kernel.org/pub/scm/git/git.git
+
+2. set user name/user email
+	$ git config --global user.name "yenziichun"
+	$ git config --global user.email yenping074@gmail.com
+
+	$ git config --list #list all setting values
+
+3. go to the directory you want to track
+	$ git init #make a sub-directory call ./git
+	$ git add [filename] #start tracking file
+	$ git commit -m '[message you want]' #commit job
+
+4.check file status
+	$ git status
+
+5. ignore files
+	#create a file call '.gitignore'
+	for example:
+	$ cat .gitignore
+	*.[oa] #ignore any file end with .o or .a
+	*~
+6. check the uncommit change
+	# if a file modified but not added
+	$ git diff # show the difference before last staged file
+
+	# if a file added but not commit
+	$ git diff --staged # show the difference before last commit
+
+7. git commit
+	$ git commit # use the default editor to write message
+	$ git commit -m '[message]'
+	$ git commit -v # show the uncommit change
+	$ git commit -a # commit all the tracking files without staging them
+
+
+
+
+
+
+note:
+
+1.copy repo
+	$ git clone [url] [new directory name] #[new directory name] is optional
