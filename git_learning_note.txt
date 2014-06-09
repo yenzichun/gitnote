@@ -38,6 +38,22 @@ GIT learning note
 	$ git commit -v # show the uncommit change
 	$ git commit -a # commit all the tracking files without staging them
 
+8. git checkout [branch name]
+	切換成 [branch name]	
+
+9. git push -u origin master
+	把 origin Push 到 master上
+
+10. 在別的電腦 clone 下來想要 push 回去卻出現"github fatal http request failed":
+	解法: vi .git/config 將 url=https://github.com/path/repo.git 改成 https://USERNAME@github.com/path/repo.git
+	如此 push 時便會要你輸入密碼
+
+
+
+
+
+
+
 
 
 
@@ -47,3 +63,6 @@ note:
 
 1.copy repo
 	$ git clone [url] [new directory name] #[new directory name] is optional
+
+
+
